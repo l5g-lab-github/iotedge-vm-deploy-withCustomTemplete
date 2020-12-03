@@ -1,5 +1,7 @@
 # iotedge-vm-deploy
 
+[オリジナルテンプレート](https://raw.githubusercontent.com/Azure/iotedge-vm-deploy/master/edgeDeploy.json)を使用すると、VMなどの名前がランダム文字列になってしまう問題を解決した。
+
 Detailed documentation is available on [Microsoft Docs](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-ubuntuvm?WT.mc_id=github-iotedgevmdeploy-pdecarlo)
 
 ## ARM Template to deploy IoT Edge enabled VM
