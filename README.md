@@ -41,6 +41,7 @@ az deployment group create \
 --parameters authenticationType='password'
 ```
 troubleshooting：
+
 dnsLabelPrefixはすべて小文字の半角英数字。deviceConnectionStringiotHubに登録してあるデバイスの接続文字列を直接コピペしてもいい。
  # Details
  Detailed documentation is available on 
