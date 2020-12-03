@@ -1,5 +1,6 @@
 # iotedge-vm-deploy 
-IoT EdgeモジュールがデプロイされたLinux VMを手軽に作成する
+IoT EdgeモジュールがデプロイされたLinux VMを手軽に作成する.
+
 [オリジナルテンプレート](https://raw.githubusercontent.com/Azure/iotedge-vm-deploy/master/edgeDeploy.json)を使用すると、VMなどの名前がランダム文字列になってしまう問題を解決した。
 
 ## Resource Groupを作る
