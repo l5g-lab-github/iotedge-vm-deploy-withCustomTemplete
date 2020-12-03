@@ -36,7 +36,7 @@ Example:
 ```bash
 az deployment group create \
 --resource-group rg-factory-ai \
---template-uri "https://aka.ms/iotedge-vm-deploy" \
+--template-uri "https://raw.githubusercontent.com/l5g-lab-github/iotedge-vm-deploy-withCustomTemplete/main/edgeDeploy.json" \
 --parameters dnsLabelPrefix='my-edge-vm' \
 --parameters adminUsername='azureUser' \
 --parameters deviceConnectionString=$(az iot hub device-identity connection-string show --device-id cam04 --hub-name factory-AI -o tsv) \
