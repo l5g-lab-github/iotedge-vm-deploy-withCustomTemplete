@@ -21,7 +21,7 @@ The ARM template visualized for exploration
 ## Azure CLI command to deploy IoT Edge enabled VM
 
 ```bash
-az group deployment create \
+az deployment group create \
   --resource-group <replace-with-rg-name> \
   --template-uri "https://raw.githubusercontent.com/l5g-lab-github/iotedge-vm-deploy-withCustomTemplete/main/edgeDeploy.json" \
   --parameters dnsLabelPrefix='<replace-with-VM-name>' \
