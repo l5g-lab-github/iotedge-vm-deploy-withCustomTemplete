@@ -1,14 +1,11 @@
 # iotedge-vm-deploy 
 IoT EdgeモジュールがデプロイされたLinux VMを手軽に作成する
+[オリジナルテンプレート](https://raw.githubusercontent.com/Azure/iotedge-vm-deploy/master/edgeDeploy.json)を使用すると、VMなどの名前がランダム文字列になってしまう問題を解決した。
 
 ## Resource Groupを作る
 ```bash
 az group create --name <replace-with-rg-name> --location JapanEast
 ```
-
-[オリジナルテンプレート](https://raw.githubusercontent.com/Azure/iotedge-vm-deploy/master/edgeDeploy.json)を使用すると、VMなどの名前がランダム文字列になってしまう問題を解決した。
-
-Detailed documentation is available on [Microsoft Docs](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-ubuntuvm?WT.mc_id=github-iotedgevmdeploy-pdecarlo)
 
 ## ARM Template to deploy IoT Edge enabled VM
 
@@ -45,3 +42,12 @@ az group deployment create \
   --parameters deviceConnectionString=$(az iot hub device-identity show-connection-string --device-id cam01 --hub-name myFirstIoTHub -o tsv) \
   --parameters authenticationType='sshPublicKey' \
   --parameters adminPasswordOrKey="$(< ~/.ssh/id_rsa.pub)"
+  
+  
+ # Details
+ Detailed documentation is available on 
+ 
+ [Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/iot-edge/how-to-install-iot-edge-ubuntuvm?WT.mc_id=github-iotedgevmdeploy-pdecarlo)
+ 
+ [Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/iot-edge/quickstart-linux?view=iotedge-2018-06#code-try-5)
+ 
