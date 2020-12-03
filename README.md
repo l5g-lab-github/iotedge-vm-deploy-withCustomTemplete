@@ -43,12 +43,11 @@ az group deployment create \
   --parameters deviceConnectionString=$(az iot hub device-identity show-connection-string --device-id cam01 --hub-name myFirstIoTHub -o tsv) \
   --parameters authenticationType='sshPublicKey' \
   --parameters adminPasswordOrKey="$(< ~/.ssh/id_rsa.pub)"
-  
-  
+```
+
  # Details
  Detailed documentation is available on 
  
  [Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/iot-edge/how-to-install-iot-edge-ubuntuvm?WT.mc_id=github-iotedgevmdeploy-pdecarlo)
  
  [Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/iot-edge/quickstart-linux?view=iotedge-2018-06#code-try-5)
- 
