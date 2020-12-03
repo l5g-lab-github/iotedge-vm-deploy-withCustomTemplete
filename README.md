@@ -28,8 +28,7 @@ az group deployment create \
   --parameters dnsLabelPrefix='<replace-with-VM-name>' \
   --parameters adminUsername='<replace-with-adminUser-name>' \
   --parameters deviceConnectionString=$(az iot hub device-identity show-connection-string --device-id <replace-with-device-name> --hub-name <replace-with-hub-name> -o tsv) \
-  --parameters authenticationType='sshPublicKey' \
-  --parameters adminPasswordOrKey="$(< ~/.ssh/id_rsa.pub)"
+  --parameters authenticationType='password' 
 ```
 
 Example:
@@ -41,7 +40,6 @@ az deployment group create \
 --parameters adminUsername='azureUser' \
 --parameters deviceConnectionString=$(az iot hub device-identity connection-string show --device-id cam04 --hub-name factory-AI -o tsv) \
 --parameters authenticationType='password'
---parameters adminPasswordOrKey="MyPassWord1234"
 ```
 
  # Details
