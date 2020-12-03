@@ -34,15 +34,14 @@ az group deployment create \
 
 Example:
 ```bash
-az group deployment create \
-  --name edgeVm \
-  --resource-group IoTEdgeResources \
-  --template-uri "https://raw.githubusercontent.com/l5g-lab-github/iotedge-vm-deploy-withCustomTemplete/main/edgeDeploy.json" \
-  --parameters dnsLabelPrefix='my-edge-vm1' \
-  --parameters adminUsername='azureuser' \
-  --parameters deviceConnectionString=$(az iot hub device-identity show-connection-string --device-id cam01 --hub-name myFirstIoTHub -o tsv) \
-  --parameters authenticationType='sshPublicKey' \
-  --parameters adminPasswordOrKey="$(< ~/.ssh/id_rsa.pub)"
+az deployment group create \
+--resource-group rg-factory-ai \
+--template-uri "https://aka.ms/iotedge-vm-deploy" \
+--parameters dnsLabelPrefix='my-edge-vm' \
+--parameters adminUsername='azureUser' \
+--parameters deviceConnectionString=$(az iot hub device-identity connection-string show --device-id cam04 --hub-name factory-AI -o tsv) \
+--parameters authenticationType='password'
+--parameters adminPasswordOrKey="MyPassWord1234"
 ```
 
  # Details
