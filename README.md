@@ -22,7 +22,6 @@ The ARM template visualized for exploration
 
 ```bash
 az group deployment create \
-  --name <replace-with-edge-name> \
   --resource-group <replace-with-rg-name> \
   --template-uri "https://raw.githubusercontent.com/l5g-lab-github/iotedge-vm-deploy-withCustomTemplete/main/edgeDeploy.json" \
   --parameters dnsLabelPrefix='<replace-with-VM-name>' \
