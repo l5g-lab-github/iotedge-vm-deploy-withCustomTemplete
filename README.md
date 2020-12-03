@@ -40,7 +40,8 @@ az deployment group create \
 --parameters deviceConnectionString=$(az iot hub device-identity connection-string show --device-id cam04 --hub-name factory-AI -o tsv) \
 --parameters authenticationType='password'
 ```
-troubleshooting：dnsLabelPrefixはすべて小文字の半角英数字。deviceConnectionStringiotHubに登録してあるデバイスの接続文字列を直接コピペしてもいい。
+troubleshooting：
+dnsLabelPrefixはすべて小文字の半角英数字。deviceConnectionStringiotHubに登録してあるデバイスの接続文字列を直接コピペしてもいい。
  # Details
  Detailed documentation is available on 
  
