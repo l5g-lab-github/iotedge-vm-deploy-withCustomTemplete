@@ -48,6 +48,6 @@ az group deployment create \
  # Details
  Detailed documentation is available on 
  
- [Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/iot-edge/how-to-install-iot-edge-ubuntuvm?WT.mc_id=github-iotedgevmdeploy-pdecarlo)
+ [Ubuntu 仮想マシン上で Azure IoT Edge を実行する](https://docs.microsoft.com/ja-jp/azure/iot-edge/how-to-install-iot-edge-ubuntuvm?WT.mc_id=github-iotedgevmdeploy-pdecarlo)
  
- [Microsoft Docs](https://docs.microsoft.com/ja-jp/azure/iot-edge/quickstart-linux?view=iotedge-2018-06#code-try-5)
+ [クイック スタート:初めての IoT Edge モジュールを Linux 仮想デバイスにデプロイする](https://docs.microsoft.com/ja-jp/azure/iot-edge/quickstart-linux?view=iotedge-2018-06#code-try-5)
